@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Leyte High</title>
+    </head>
+    <body>
+        <header>
+            <img src="LOGO.png" alt="Logo" class="logo-image">
+            <nav class="navigation">
+                <a href="loginforum copy.html">Home</a>
+                <a href="loginforum copy 2.html">About</a>
+                <a href="loginforum copy 3.html">Services</a>
+                <a href="loginforum copy 4.html">Contact</a>
+                <button class="btnLogin-popup">Login</button>
+            </nav>
+        </header>
+<!--ASSIGNMENTS-->
+        <button class="assignmentsbtn">ASSIGNMENTS</button>
+        <div class="wrapperbtn">
+            <span class="icon-closebtn"><ion-icon name="close-outline"></ion-icon></span>
+            <h2><u>SUBJECTS</u></h2>
+            <h2><u>DUE DATE: NOV. 11</u></h2>
+            <h3><u>Research: ACTIVITY</u></h3>
+            <h3><u>Science: ACTVITY SHEET</u></h3>
+            <h3><u>Mathematics: ACTIVITY SHEET</u></h3>
+            <h3><u>English: null</u></h3>
+            <h3><u>Aral. Pan.: ACTIVITY SHEET (2x)</u></h3>
+            <h3><u>I.C.T: ACTIVITY</u></h3>
+            <h3><u>Filipino: ACTIVITY SHEET</u></h3>
+            <h3><u>E.S.P: ACTIVITY SHEET</u></h3>
+        </div>
+<!--ANNOUNCEMENTS-->
+        <button class="announcementbtn">ANNOUNCEMENTS</button>
+        <div class="wrapperannounced">
+            <span class="icon-closebutn"><ion-icon name="close-outline"></ion-icon></span>
+            <h2><u>IMPORTANT ANNOUNCEMENTS!</u></h2>
+            <ul>
+                <li><h3><u>PRACTICE THIS UPCOMING NOV. 11</u></h3></li>
+                <li><h3><u>NULL</u></h3></li>
+                <li><h3><u>NULL</u></h3></li>
+                <li><h3><u>NULL</u></h3></li>
+            </ul>
+        </div>
+<!--PROJECTS-->
+        <button class="projectsbtn">PROJECTS</button>
+        <div class="wrapperproj">
+            <span class="icon-closeproj"><ion-icon name="close-outline"></ion-icon></span>
+            <h2><u>SUBJECTS</u></h2>
+            <h3><u>Research: null</u></h3>
+            <h3><u>Science: null</u></h3>
+            <h3><u>Mathematics: null</u></h3>
+            <h3><u>English: null</u></h3>
+            <h3><u>Aral. Pan.: GROUP PROJECT</u></h3>
+            <h3><u>I.C.T: null</u></h3>
+            <h3><u>Filipino: null</u></h3>
+            <h3><u>E.S.P: SCRAPBOOK</u></h3>
+        </div>
+<!--DATE OF EXAMINATIONS-->
+        <button class="examsbtn">EXAMS</button>
+        <div class="wrapperexam">
+            <span class="icon-closex"><ion-icon name="close-outline"></ion-icon></span>
+            <h2><u>DATE OF EXAMINATION!</u></h2>
+            <ul>
+                <li><h3><u>DECEMBER 2, 2024 (CONFIRMED)</u></h3></li>
+                <li><h3><u>DECEMBER 3, 2024 (CONFIRMED)</u></h3></li>
+                <li><h3><u>NULL</u></h3></li>
+                <li><h3><u>NULL</u></h3></li>
+            </ul>
+        </div>
+<!--LOGIN-->
+        <div class="wrapper">
+            <span class="icon-close"><ion-icon name="close-outline"></ion-icon></span>
+            <div class="form-box login">
+                <h2>Login</h2>
+                <form action="#">
+                    <div class="input-box">
+                        <span class="icon"><ion-icon name="mail-outline"></ion-icon></span>
+                        <input type="email" required>
+                        <label>Email</label>
+                    </div>
+                    <div class="input-box">
+                        <span class="icon"><ion-icon name="lock-closed-outline"></ion-icon></span>
+                        <input type="password" required>
+                        <label>Password</label>
+                    </div>
+                    <div class="remember-forgot">
+                        <label><input type="checkbox">Remember Me</label> <a href="#">Forgot Password?</a>
+                    </div>
+                    <button type="submit" class="btn">Login</button>
+                    <div class="login-register">
+                        <p>Don't have an accounter? <a href="#" class="register-link">Register</a></p>
+                    </div>
+                </form>
+            </div>
+<!--REGISTRATION-->
+            <div class="form-box register">
+                <h2>Registration</h2>
+                <form action="#">
+                    <div class="input-box">
+                        <span class="icon"><ion-icon name="person-circle-sharp"></ion-icon></span>
+                        <input type="text" required>
+                        <label>Username</label>
+                    </div>
+                    <div class="input-box">
+                        <span class="icon"><ion-icon name="mail-outline"></ion-icon></span>
+                        <input type="email" required>
+                        <label>Email</label>
+                    </div>
+                    <div class="input-box">
+                        <span class="icon"><ion-icon name="lock-closed-outline"></ion-icon></span>
+                        <input type="password" required>
+                        <label>Password</label>
+                    </div>
+                    <div class="remember-forgot">
+                        <label><input type="checkbox">I agree to the terms & conditions</label>
+                    </div>
+                    <button type="submit" class="btn">Register</button>
+                    <div class="login-register">
+                        <p>Already have an account? <a href="#" class="login-link">Login</a></p>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+
+
+        <link rel="stylesheet" href="loginforum.css">
+        <script src="loginforum.js"></script>
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+<script>
+    //ASSIGNMENTS
+    document.addEventListener('DOMContentLoaded', function () {
+    document.querySelector('.assignmentsbtn').addEventListener('click', function () {
+        document.querySelector('.wrapperbtn').classList.toggle('active2');
+    });
+
+    document.querySelector('.icon-closebtn').addEventListener('click', function () {
+        console.log('Close button clicked');
+        document.querySelector('.wrapperbtn').classList.remove('active2');
+    });
+});//END
+//ANNOUNCEMENTS
+document.addEventListener('DOMContentLoaded', function () {
+    document.querySelector('.announcementbtn').addEventListener('click', function () {
+        document.querySelector('.wrapperannounced').classList.toggle('active2');
+    });
+
+    document.querySelector('.icon-closebutn').addEventListener('click', function () {
+        console.log('Close button clicked');
+        document.querySelector('.wrapperannounced').classList.remove('active2');
+    });
+});//END
+//PROJECTS
+document.addEventListener('DOMContentLoaded', function () {
+    document.querySelector('.projectsbtn').addEventListener('click', function () {
+        document.querySelector('.wrapperproj').classList.toggle('active2');
+    });
+
+    document.querySelector('.icon-closeproj').addEventListener('click', function () {
+        console.log('Close button clicked');
+        document.querySelector('.wrapperproj').classList.remove('active2');
+    });
+});//END
+//EXAMS
+document.addEventListener('DOMContentLoaded', function () {
+    document.querySelector('.examsbtn').addEventListener('click', function () {
+        document.querySelector('.wrapperexam').classList.toggle('active2');
+    });
+
+    document.querySelector('.icon-closex').addEventListener('click', function () {
+        console.log('Close button clicked');
+        document.querySelector('.wrapperexam').classList.remove('active2');
+    });
+});//END
+//ATTENDANCE
+    </script>    
+    </body>
+
+</html>
