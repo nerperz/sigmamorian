@@ -184,7 +184,17 @@ document.addEventListener('DOMContentLoaded', function () {
         document.querySelector('.wrapperexam').classList.remove('active2');
     });
 });//END
-//ATTENDANCE
+//NOTES
+    document.addEventListener('DOMContentLoaded', function () {
+    document.querySelector('.notesbtn').addEventListener('click', function () {
+        document.querySelector('.wrappernotes').classList.toggle('active2');
+    });
+
+    document.querySelector('.icon-closenotes').addEventListener('click', function () {
+        console.log('Close button clicked');
+        document.querySelector('.wrappernotes').classList.remove('active2');
+    });
+});//END
     </script>    
     </body>
 
