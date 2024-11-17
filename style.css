@@ -695,3 +695,154 @@ img {
 .wrappernotes::-webkit-scrollbar-thumb:hover {
     background-color: rgba(255, 255, 255, 0.7);
 }
+/* Responsive Design Enhancements */
+
+/* For tablets and smaller devices */
+@media (max-width: 768px) {
+    body {
+        background-size: contain;
+        padding: 10px;
+    }
+
+    header {
+        padding: 15px 20px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    img {
+        top: 10px;
+        left: 10px;
+        width: 70px;
+    }
+
+    .navigation {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navigation a {
+        font-size: 0.9em;
+        margin-left: 0;
+        margin-top: 10px;
+    }
+
+    .navigation .btnLogin-popup {
+        width: 100px;
+        height: 40px;
+        font-size: 0.9em;
+    }
+
+    .wrapper {
+        width: 90%;
+        height: auto;
+        margin: 0 auto;
+    }
+
+    .formbox {
+        padding: 20px;
+    }
+
+    .input-box {
+        margin: 20px 0;
+    }
+
+    .btn {
+        font-size: 0.9em;
+        height: 40px;
+    }
+
+    .assignmentsbtn, .announcementbtn {
+        width: 130px;
+        height: 55px;
+        font-size: 0.9em;
+    }
+}
+
+/* For smartphones and smaller devices */
+@media (max-width: 480px) {
+    header {
+        padding: 10px 15px;
+    }
+
+    img {
+        width: 50px;
+    }
+
+    .navigation a {
+        font-size: 0.8em;
+    }
+
+    .navigation .btnLogin-popup {
+        width: 90px;
+        height: 35px;
+        font-size: 0.8em;
+    }
+
+    h3 {
+        font-size: 1em;
+    }
+
+    .wrapper {
+        padding: 10px;
+        width: 95%;
+        height: auto;
+    }
+
+    .formbox h2 {
+        font-size: 1.5em;
+    }
+
+    .input-box {
+        margin: 15px 0;
+    }
+
+    .btn {
+        font-size: 0.8em;
+    }
+
+    .assignmentsbtn, .announcementbtn {
+        width: 100px;
+        height: 45px;
+        font-size: 0.8em;
+    }
+}
+
+/* For very small devices (320px and below) */
+@media (max-width: 320px) {
+    body {
+        padding: 5px;
+    }
+
+    header {
+        padding: 5px;
+    }
+
+    img {
+        width: 40px;
+    }
+
+    .navigation a {
+        font-size: 0.7em;
+    }
+
+    .navigation .btnLogin-popup {
+        font-size: 0.7em;
+        width: 80px;
+        height: 30px;
+    }
+
+    h3 {
+        font-size: 0.9em;
+    }
+
+    .btn {
+        font-size: 0.7em;
+    }
+
+    .assignmentsbtn, .announcementbtn {
+        width: 90px;
+        height: 40px;
+        font-size: 0.7em;
+    }
+}
