@@ -68,3 +68,35 @@ registerForm.addEventListener('submit', (e) => {
         wrapper.classList.remove('active'); // Switch to login form after registration
     }
 });
+// FORGOT PASSWORD
+// FORGOT PASSWORD
+const forgotPasswordLink = loginForm.querySelector('.remember-forgot a');
+
+forgotPasswordLink.addEventListener('click', (e) => {
+    e.preventDefault(); // Prevent default link behavior
+
+    const email = prompt("Enter your registered email to reset your password:");
+
+    if (!email) {
+        alert("Email is required!");
+        return;
+    }
+
+    // Check if the email exists in the localStorage
+    const user = users.find(user => user.email === email);
+
+    if (user) {
+        const newPassword = prompt("Enter your new password:");
+
+        if (newPassword) {
+            // Update the password in localStorage
+            user.password = newPassword;
+            localStorage.setItem('users', JSON.stringify(users));
+            alert("Your password has been reset successfully. You can now log in with your new password.");
+        } else {
+            alert("Password reset canceled. Please try again.");
+        }
+    } else {
+        alert("No account found with this email. Please check your email or register a new account.");
+    }
+});
