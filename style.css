@@ -695,3 +695,355 @@ img {
 .wrappernotes::-webkit-scrollbar-thumb:hover {
     background-color: rgba(255, 255, 255, 0.7);
 }
+/*CODE TO MAKE IT VIEWABLE FOR MOBILE*/
+/* Mobile-Friendly Styles */
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+        background-size: cover;
+    }
+
+    header {
+        padding: 10px 20px;
+        text-align: center;
+    }
+
+    header img {
+        position: absolute; 
+        left: 10px; 
+        width: 70px;
+        top: 10px;
+    }
+/*navigation*/
+    .navigation {
+        flex-direction: row;
+        gap: 10px;
+        margin-top: 10px;
+    }
+
+    .navigation a {
+        margin-left: 0;
+        font-size: 1em;
+    }
+
+    .navigation .btnLogin-popup {
+        width: 100px;
+        height: 40px;
+        font-size: 1em;
+        margin-left: 0;
+    }
+/*end*/
+    .wrapper {
+        height: 360px;
+        width: 100%;
+        max-width: 360px;
+        padding: 20px;
+    }
+
+    .form-box {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .form-box h2 {
+        font-size: 1.5em;
+    }
+
+    .input-box {
+        margin: 20px 0;
+    }
+
+    .input-box input {
+        font-size: 1em;
+        padding: 0 10px;
+    }
+
+    .input-box label {
+        font-size: 0.9em;
+    }
+
+    .btn {
+        height: 40px;
+        font-size: 1em;
+    }
+
+    .login-register p {
+        font-size: 0.9em;
+    }
+}
+@media (max-width: 768px) {
+/*wrapperassignment*/
+.assignmentsbtn {
+    width: 125px;
+    height: 65px;
+    background: #162938;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1em;
+    color: #fff;
+    font-weight: 500;
+    position: fixed;
+    top: 25%;
+    left: 10px;
+    transform: translateY(-50%);
+}
+
+.wrapperbtn {
+    position: fixed; 
+    top: 15%; 
+    left: 145px; 
+    width: 250px; 
+    max-height: 400px; 
+    background: transparent; 
+    border: 2px solid rgba(250,250,250, .5);
+    border-radius: 20px;
+    backdrop-filter: blur(10px); 
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5); 
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 20px;
+    overflow: hidden;
+    transform: scale(0); 
+    transition: transform .5s ease, height .2s ease;
+    z-index: 1000; 
+}
+
+/*announcements*/
+.announcementbtn {
+    width: 125px;
+    height: 65px;
+    background: #162938;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: .8em;
+    color: #fff;
+    font-weight: 500;
+    position: fixed;
+    top: 40%;
+    left: 10px;
+    transform: translateY(-50%);
+}
+
+.wrapperannounced {
+    position: fixed; 
+    top: 15%; 
+    left: 145px; 
+    width: 250px; 
+    max-height: 400px; 
+    background: transparent; 
+    border: 2px solid rgba(250,250,250, .5);
+    border-radius: 20px;
+    backdrop-filter: blur(10px); 
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5); 
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 20px;
+    overflow: hidden;
+    transform: scale(0); 
+    transition: transform .5s ease, height .2s ease;
+    z-index: 1000; 
+}
+
+/*DUE PROJECTS*/
+.projectsbtn {
+    width: 125px;
+    height: 65px;
+    background: #162938;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1em;
+    color: #fff;
+    font-weight: 500;
+    position: fixed;
+    top: 55%;
+    left: 10px;
+    transform: translateY(-50%);
+}
+
+.wrapperproj {
+    position: fixed; 
+    top: 15%; 
+    left: 145px; 
+    width: 250px; 
+    max-height: 400px; 
+    background: transparent; 
+    border: 2px solid rgba(250,250,250, .5);
+    border-radius: 20px;
+    backdrop-filter: blur(10px); 
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5); 
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 20px;
+    overflow: hidden;
+    transform: scale(0); 
+    transition: transform .5s ease, height .2s ease;
+    z-index: 1000; 
+}
+/*EXAMS*/
+.examsbtn {
+    width: 125px;
+    height: 65px;
+    background: #162938;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1em;
+    color: #fff;
+    font-weight: 500;
+    position: fixed;
+    top: 70%;
+    left: 10px;
+    transform: translateY(-50%);
+}
+
+.wrapperexam {
+    position: fixed; 
+    top: 15%; 
+    left: 145px; 
+    width: 250px; 
+    max-height: 400px; 
+    background: transparent; 
+    border: 2px solid rgba(250,250,250, .5);
+    border-radius: 20px;
+    backdrop-filter: blur(10px); 
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5); 
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 20px;
+    overflow: hidden;
+    transform: scale(0); 
+    transition: transform .5s ease, height .2s ease;
+    z-index: 1000; 
+    }
+    /*notes*/
+    .notesbtn {
+        width: 125px;
+        height: 65px;
+        background: #162938;
+        border: none;
+        outline: none;
+        border-radius: 6px;
+        cursor: pointer;
+        font-size: 1em;
+        color: #fff;
+        font-weight: 500;
+        position: fixed;
+        top: 85%;
+        left: 10px;
+        transform: translateY(-50%);
+    }
+
+    .wrappernotes {
+        position: fixed; 
+        top: 15%; 
+        left: 145px; 
+        width: 250px; 
+        max-height: 400px; 
+        background: transparent; 
+        border: 2px solid rgba(250,250,250, .5);
+        border-radius: 20px;
+        backdrop-filter: blur(10px); 
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.5); 
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        padding: 20px;
+        overflow: hidden;
+        transform: scale(0); 
+        transition: transform .5s ease, height .2s ease;
+        z-index: 1000; 
+    }
+}
+/*NAVIGATIONS*/
+/*ABOUT US EXTREMELY DO NOT TOUCH*/
+@media (max-width: 768px) {
+    /*ABOUTUS & CONTACTS*/ /*(INFO IS COMBINED)*/
+    .information {
+        position: absolute;
+        top: 20%;
+        left: 1%;
+        color: white;
+        font-family: 'Poppins', sans-serif;
+        background-color: rgba(0, 0, 0, 0.5);
+        padding: 5px; 
+        border-radius: 8px; 
+        z-index: 100; 
+        font-size: 0.9rem;
+    }
+    
+    .information h1, .information h2 {
+        margin: 0;
+        padding: 0;
+        font-size: 1.09rem;
+    }
+    /*SERVICES*/
+    .services {
+        position: absolute;
+        top: 20%;
+        left: 2%;
+        color: white;
+        font-family: 'Poppins', sans-serif;
+        background-color: rgba(0, 0, 0, 0.5);
+        padding: 5px; 
+        border-radius: 8px; 
+        z-index: 100; 
+    }
+    
+    .services h1, .services h2 {
+        margin: 0;
+        padding: 0;
+        font-size: 1.09rem;
+    }
+}
+
+
+@media (max-width: 480px) {
+    header img {
+        width: 50px;
+    }
+
+    .navigation a {
+        font-size: 0.9em;
+    }
+
+    .navigation .btnLogin-popup {
+        font-size: 0.9em;
+    }
+
+    .wrapper {
+        max-width: 300px;
+    }
+
+    .form-box h2 {
+        font-size: 1.3em;
+    }
+
+    .input-box input {
+        font-size: 0.9em;
+    }
+
+    .input-box label {
+        font-size: 0.8em;
+    }
+
+    .btn {
+        font-size: 0.9em;
+    }
+}
+
